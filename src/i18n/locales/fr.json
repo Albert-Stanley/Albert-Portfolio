@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Albert Stanley",
+    "title": "Développement d'interfaces web haute performance",
+    "summary": "Spécialiste React et TypeScript, je crée des expériences numériques qui combinent code propre, design intuitif et performance exceptionnelle. Mon objectif est de transformer des idées complexes en solutions élégantes et fonctionnelles.",
+    "cta": "Voir mes projets",
+    "downloadCV": "Télécharger CV"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "profilePhoto": "Photo de profil",
+    "description1": "Je suis un développeur front-end qui croit que les grands produits naissent de la combinaison entre excellence technique et communication claire. Avec une solide expérience en React, TypeScript et architectures modernes, je transforme des exigences complexes en interfaces intuitives et performantes.",
+    "description2": "Mon approche va au-delà du code : je livre des solutions complètes qui considèrent l'expérience utilisateur, la maintenabilité et la scalabilité. Je travaille avec des méthodologies agiles et j'ai un historique cohérent de livraisons dans les délais, en priorisant toujours la qualité et la collaboration efficace avec des équipes multidisciplinaires.",
+    "highlights": {
+      "cleanCode": {
+        "title": "Code Propre",
+        "description": "Architectures évolutives suivant les principes SOLID et les bonnes pratiques de développement"
+      },
+      "uxui": {
+        "title": "Focus UX/UI",
+        "description": "Interfaces qui priorisent l'utilisabilité et offrent des expériences exceptionnelles"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Optimisation constante pour des applications rapides et efficaces sur tout appareil"
+      }
+    }
+  },
+  "skills": {
+    "title": "Stack Technologique",
+    "subtitle": "Outils et technologies que je maîtrise pour créer des solutions modernes et robustes"
+  },
+  "projects": {
+    "title": "Projets en Vedette",
+    "subtitle": "Solutions que j'ai développées en appliquant les meilleures pratiques de développement et design",
+    "technologies": "Technologies:",
+    "viewCode": "Voir le Code",
+    "viewLive": "Voir la Démo",
+    "viewMore": "Voir plus sur GitHub",
+    "ctaText": "Vous voulez voir plus de travaux? Consultez mon profil GitHub!",
+    "items": {
+      "githubSearch": {
+        "title": "Recherche de Profil GitHub",
+        "description": "Interface réactive pour la recherche de profils GitHub avec optimisation des requêtes utilisant Tanstack Query. J'ai implémenté une gestion robuste des états (loading/error) et debounce pour améliorer l'expérience utilisateur.",
+        "type": "Application Web"
+      },
+      "dedeApp": {
+        "title": "DedeApplication",
+        "description": "App multiplateforme pour la gestion de données de santé, développée avec un focus sur la performance et l'accessibilité. J'ai utilisé Zustand pour la gestion d'état et implémenté une navigation optimisée pour iOS/Android.",
+        "type": "App Mobile"
+      },
+      "googleAuth": {
+        "title": "Authentification Google OAuth",
+        "description": "Solution complète d'authentification avec Google OAuth 2.0 utilisant l'architecture BFF. J'ai implémenté un flux sécurisé de tokens JWT et une intégration native avec Expo pour une expérience fluide.",
+        "type": "App Mobile"
+      },
+      "portfolio": {
+        "title": "Site Web Portfolio",
+        "description": "Site portfolio moderne construit avec React et TypeScript, avec mode sombre, internationalisation et animations fluides.",
+        "type": "Application Web"
+      }
+    }
+  },
+  "contact": {
+    "title": "Collaborons sur un projet ?",
+    "subtitle": "Je suis disponible pour de nouvelles opportunités et toujours ouvert pour discuter de projets stimulants. Contactez-moi pour parler de comment je peux contribuer à votre équipe.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Erreur lors de l'envoi du message. Veuillez réessayer."
+    },
+    "cta": {
+      "title": "Prêt à commencer ?",
+      "description": "Téléchargez mon CV complet ou contactez-moi directement pour discuter de votre projet.",
+      "downloadCV": "Télécharger CV (PDF)",
+      "sendEmail": "Envoyer un Email"
+    },
+    "info": {
+      "location": "Brésil • Disponible pour projets à distance",
+      "availability": "Temps de réponse moyen : 24 heures",
+      "coffee": "Toujours ouvert pour une conversation sur la technologie"
+    },
+    "footer": "© 2025 Albert Stanley. Développé avec ❤️ en utilisant React + TypeScript + Tailwind CSS"
+  }
+}
