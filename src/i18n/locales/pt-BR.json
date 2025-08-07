@@ -14,11 +14,12 @@
     "downloadCV": "Baixar CV"
   },
   "about": {
-    "title": "Sobre Mim",
-    "profilePhoto": "Foto do perfil",
+    "title": "Sobre Mim & Tecnologias",
+    "subtitle": "Desenvolvedor especializado em criar experiências digitais excepcionais com foco em performance, usabilidade e código limpo",
     "description1": "Sou um desenvolvedor front-end que acredita que grandes produtos nascem da combinação entre excelência técnica e comunicação clara. Com sólida experiência em React, TypeScript e arquiteturas modernas, transformo requisitos complexos em interfaces intuitivas e performáticas.",
     "description2": "Minha abordagem vai além do código: entrego soluções completas que consideram experiência do usuário, manutenibilidade e escalabilidade. Trabalho com metodologias ágeis e tenho um histórico consistente de entregas no prazo, sempre priorizando a qualidade e a colaboração efetiva com equipes multidisciplinares.",
     "highlights": {
+      "title": "Minhas Especialidades",
       "cleanCode": {
         "title": "Código Limpo",
         "description": "Arquiteturas escaláveis seguindo princípios SOLID e boas práticas de desenvolvimento"
@@ -31,11 +32,15 @@
         "title": "Performance",
         "description": "Otimização constante para aplicações rápidas e eficientes em qualquer dispositivo"
       }
+    },
+    "skills": {
+      "title": "Stack Tecnológica",
+      "subtitle": "Ferramentas e tecnologias que domino para criar soluções modernas e robustas"
     }
   },
   "skills": {
-    "title": "Stack Tecnológica",
-    "subtitle": "Ferramentas e tecnologias que domino para criar soluções modernas e robustas"
+    "title": "Stack Tecnológica (Seção Removida)",
+    "subtitle": "Esta seção foi integrada à seção 'Sobre Mim'"
   },
   "projects": {
     "title": "Projetos em Destaque",
@@ -69,23 +74,6 @@
     }
   },
   "contact": {
-    "title": "Vamos colaborar em um projeto?",
-    "subtitle": "Estou disponível para novas oportunidades e sempre aberto para discutir projetos desafiadores. Entre em contato para conversarmos sobre como posso contribuir com sua equipe.",
-    "form": {
-      "name": "Nome",
-      "email": "E-mail",
-      "message": "Mensagem",
-      "send": "Enviar Mensagem",
-      "sending": "Enviando...",
-      "success": "Mensagem enviada com sucesso!",
-      "error": "Erro ao enviar mensagem. Tente novamente."
-    },
-    "cta": {
-      "title": "Pronto para começar?",
-      "description": "Baixe meu currículo completo ou entre em contato diretamente para discutirmos seu projeto.",
-      "downloadCV": "Baixar Currículo (PDF)",
-      "sendEmail": "Enviar Email"
-    },
     "info": {
       "location": "Brasil • Disponível para projetos remotos",
       "availability": "Tempo de resposta médio: 24 horas",

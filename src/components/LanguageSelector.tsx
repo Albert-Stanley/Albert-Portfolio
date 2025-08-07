@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { motion } from 'framer-motion';
 import { Listbox, Transition } from '@headlessui/react';
 import { ChevronDown, Globe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -7,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 const languages = [
   { code: 'pt-BR', name: 'Português', flag: '🇧🇷' },
   { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
   { code: 'es', name: 'Español', flag: '🇪🇸' },
 ];
 

@@ -1,34 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, Download, MapPin, Coffee } from "lucide-react";
+import { Mail, Linkedin, Github, Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { personalInfo } from "../utils/constants";
-import ContactForm from "./ContactForm";
 
 const ContactSection: React.FC = () => {
   const { t } = useTranslation();
+  const [emailCopied, setEmailCopied] = useState(false);
+
+  const copyEmailToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(personalInfo.email);
+      setEmailCopied(true);
+      setTimeout(() => setEmailCopied(false), 2000);
+    } catch (err) {
+      // Fallback para navegadores que não suportam clipboard API
+      const textArea = document.createElement("textarea");
+      textArea.value = personalInfo.email;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      setEmailCopied(true);
+      setTimeout(() => setEmailCopied(false), 2000);
+    }
+  };
 
   const contactMethods = [
     {
-      icon: <Mail className="w-6 h-6" />,
+      icon: <Mail className="w-12 h-12" />,
       label: "Email",
       value: personalInfo.email,
-      href: `mailto:${personalInfo.email}`,
+      action: copyEmailToClipboard,
       color: "from-red-500 to-pink-500",
+      hoverColor: "hover:from-red-400 hover:to-pink-400",
     },
     {
-      icon: <Linkedin className="w-6 h-6" />,
+      icon: <Linkedin className="w-12 h-12" />,
       label: "LinkedIn",
-      value: "/in/albert-stanley",
-      href: personalInfo.linkedin,
+      value: "Conectar",
+      action: () => window.open(personalInfo.linkedin, "_blank"),
       color: "from-blue-600 to-blue-700",
+      hoverColor: "hover:from-blue-500 hover:to-blue-600",
     },
     {
-      icon: <Github className="w-6 h-6" />,
+      icon: <Github className="w-12 h-12" />,
       label: "GitHub",
-      value: "/Albert-Stanley",
-      href: personalInfo.github,
+      value: "Ver perfil",
+      action: () => window.open(personalInfo.github, "_blank"),
       color: "from-gray-700 to-gray-900",
+      hoverColor: "hover:from-gray-600 hover:to-gray-800",
     },
   ];
 
@@ -69,131 +90,66 @@ const ContactSection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            {t("contact.title")}
-          </h2>
-          <p className="text-xl text-blue-100 dark:text-blue-200 max-w-3xl mx-auto leading-relaxed">
-            {t("contact.subtitle")}
-          </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full mt-6" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="space-y-8"
-          >
-            <div className="space-y-6">
-              {contactMethods.map((method, index) => (
-                <motion.a
-                  key={method.label}
-                  href={method.href}
-                  target={
-                    method.href.startsWith("mailto:") ? "_self" : "_blank"
-                  }
-                  rel={
-                    method.href.startsWith("mailto:")
-                      ? undefined
-                      : "noopener noreferrer"
-                  }
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ scale: 1.02, x: 10 }}
-                  className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all duration-300 group cursor-pointer"
-                >
+        {/* Contact Methods - 3 large icons centered */}
+        <div className="flex justify-center items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
+            {contactMethods.map((method, index) => (
+              <motion.div
+                key={method.label}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05, y: -10 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={method.action}
+                className="group cursor-pointer"
+              >
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 text-center relative overflow-hidden">
+                  {/* Hover effect background */}
                   <div
-                    className={`w-12 h-12 bg-gradient-to-r ${method.color} rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-200`}
+                    className={`absolute inset-0 bg-gradient-to-br ${method.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl`}
+                  />
+
+                  {/* Icon */}
+                  <div
+                    className={`w-20 h-20 bg-gradient-to-r ${method.color} ${method.hoverColor} rounded-xl flex items-center justify-center text-white mx-auto mb-6 group-hover:scale-110 transition-all duration-300 shadow-lg group-hover:shadow-xl relative`}
                   >
                     {method.icon}
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white group-hover:text-blue-200 transition-colors duration-200">
-                      {method.label}
-                    </h3>
-                    <p className="text-blue-200 dark:text-blue-300 text-sm">
-                      {method.value}
-                    </p>
-                  </div>
-                </motion.a>
-              ))}
-            </div>
 
-            {/* Additional info */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.8 }}
-              viewport={{ once: true }}
-              className="space-y-4 pt-6 border-t border-white/20"
-            >
-              <div className="flex items-center gap-3 text-blue-200 dark:text-blue-300">
-                <MapPin className="w-5 h-5" />
-                <span>{t("contact.info.location")}</span>
-              </div>
-              <div className="flex items-center gap-3 text-blue-200 dark:text-blue-300">
-                <Coffee className="w-5 h-5" />
-                <span>{t("contact.info.coffee")}</span>
-              </div>
-            </motion.div>
-          </motion.div>
+                    {/* Email copy indicator */}
+                    {method.label === "Email" && emailCopied && (
+                      <motion.div
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0, opacity: 0 }}
+                        className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center"
+                      >
+                        <Check className="w-3 h-3 text-white" />
+                      </motion.div>
+                    )}
+                  </div>
 
-          {/* Contact Form */}
-          <ContactForm />
+                  {/* Content */}
+                  <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-200 transition-colors duration-200">
+                    {method.label}
+                  </h3>
+
+                  <p className="text-blue-200 dark:text-blue-300 text-sm group-hover:text-white transition-colors duration-200">
+                    {method.label === "Email"
+                      ? emailCopied
+                        ? "Email copiado!"
+                        : "Clique para copiar"
+                      : method.value}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
-
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <motion.div className="bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 space-y-6 max-w-md mx-auto">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                {t("contact.cta.title")}
-              </h3>
-              <p className="text-blue-200 dark:text-blue-300 mb-8">
-                {t("contact.cta.description")}
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <motion.a
-                href="#"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
-              >
-                <Download className="w-5 h-5" />
-                {t("contact.cta.downloadCV")}
-              </motion.a>
-
-              <motion.a
-                href={`mailto:${personalInfo.email}`}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full border-2 border-white/30 text-white px-6 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
-              >
-                <Mail className="w-5 h-5" />
-                {t("contact.cta.sendEmail")}
-              </motion.a>
-            </div>
-
-            <div className="text-center pt-6">
-              <p className="text-blue-200 dark:text-blue-300 text-sm">
-                {t("contact.info.availability")}
-              </p>
-            </div>
-          </motion.div>
-        </motion.div>
 
         {/* Footer */}
         <motion.div

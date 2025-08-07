@@ -14,11 +14,13 @@
     "downloadCV": "Download CV"
   },
   "about": {
-    "title": "About Me",
+    "title": "About Me & Technologies",
+    "subtitle": "Developer specialized in creating exceptional digital experiences focused on performance, usability and clean code",
     "profilePhoto": "Profile photo",
     "description1": "I'm a front-end developer who believes great products are born from the combination of technical excellence and clear communication. With solid experience in React, TypeScript, and modern architectures, I transform complex requirements into intuitive and performant interfaces.",
     "description2": "My approach goes beyond code: I deliver complete solutions that consider user experience, maintainability, and scalability. I work with agile methodologies and have a consistent track record of on-time deliveries, always prioritizing quality and effective collaboration with multidisciplinary teams.",
     "highlights": {
+      "title": "My Specialties",
       "cleanCode": {
         "title": "Clean Code",
         "description": "Scalable architectures following SOLID principles and development best practices"
@@ -31,11 +33,15 @@
         "title": "Performance",
         "description": "Constant optimization for fast and efficient applications on any device"
       }
+    },
+    "skills": {
+      "title": "Tech Stack",
+      "subtitle": "Tools and technologies I master to create modern and robust solutions"
     }
   },
   "skills": {
-    "title": "Tech Stack",
-    "subtitle": "Tools and technologies I master to create modern and robust solutions"
+    "title": "Tech Stack (Section Removed)",
+    "subtitle": "This section was integrated into the 'About Me' section"
   },
   "projects": {
     "title": "Featured Projects",
@@ -69,23 +75,6 @@
     }
   },
   "contact": {
-    "title": "Let's collaborate on a project?",
-    "subtitle": "I'm available for new opportunities and always open to discuss challenging projects. Get in touch to talk about how I can contribute to your team.",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Error sending message. Please try again."
-    },
-    "cta": {
-      "title": "Ready to start?",
-      "description": "Download my complete resume or contact me directly to discuss your project.",
-      "downloadCV": "Download Resume (PDF)",
-      "sendEmail": "Send Email"
-    },
     "info": {
       "location": "Brazil • Available for remote projects",
       "availability": "Average response time: 24 hours",

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Download } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const HeroSection: React.FC = () => {
@@ -20,7 +19,7 @@ const HeroSection: React.FC = () => {
   }, [currentIndex, fullText]);
 
   const scrollToProjects = () => {
-    const element = document.querySelector("#projects");
+    const element = document.querySelector("#about");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -96,50 +95,20 @@ const HeroSection: React.FC = () => {
           >
             {t("hero.summary")}
           </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 2 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
-          >
-            <motion.button
-              onClick={scrollToProjects}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 10px 30px rgba(59, 130, 246, 0.3)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
-            >
-              {t("hero.cta")}
-              <ArrowDown className="w-5 h-5" />
-            </motion.button>
-
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-4 rounded-full font-semibold text-lg hover:border-blue-600 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-all duration-300 flex items-center gap-2"
-            >
-              <Download className="w-5 h-5" />
-              {t("hero.downloadCV")}
-            </motion.a>
-          </motion.div>
         </motion.div>
 
         {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 2.5 }}
+          transition={{ duration: 0.6, delay: 2 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 border-2 border-gray-400 dark:border-gray-500 rounded-full flex justify-center"
+            className="w-6 h-10 border-2 border-gray-400 dark:border-gray-500 rounded-full flex justify-center cursor-pointer"
+            onClick={scrollToProjects}
           >
             <motion.div
               animate={{ y: [0, 12, 0] }}

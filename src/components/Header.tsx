@@ -17,7 +17,7 @@ const Header = () => {
     };
 
     const handleSectionChange = () => {
-      const sections = ["home", "about", "skills", "projects", "contact"];
+      const sections = ["home", "about", "projects", "contact"];
       let current = "home";
 
       sections.forEach((section) => {
@@ -54,7 +54,6 @@ const Header = () => {
   const navItems = [
     { id: "home", label: t("nav.home") },
     { id: "about", label: t("nav.about") },
-    { id: "skills", label: t("nav.skills") },
     { id: "projects", label: t("nav.projects") },
     { id: "contact", label: t("nav.contact") },
   ];

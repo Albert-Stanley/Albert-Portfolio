@@ -14,10 +14,12 @@
     "downloadCV": "Descargar CV"
   },
   "about": {
-    "title": "Acerca de Mí",
+    "title": "Acerca de Mí & Tecnologías",
+    "subtitle": "Desarrollador especializado en crear experiencias digitales excepcionales enfocadas en rendimiento, usabilidad y código limpio",
     "description1": "Soy un desarrollador front-end que cree que los grandes productos nacen de la combinación entre excelencia técnica y comunicación clara. Con sólida experiencia en React, TypeScript y arquitecturas modernas, transformo requisitos complejos en interfaces intuitivas y performantes.",
     "description2": "Mi enfoque va más allá del código: entrego soluciones completas que consideran experiencia de usuario, mantenibilidad y escalabilidad. Trabajo con metodologías ágiles y tengo un historial consistente de entregas a tiempo, siempre priorizando la calidad y la colaboración efectiva con equipos multidisciplinarios.",
     "highlights": {
+      "title": "Mis Especialidades",
       "cleanCode": {
         "title": "Código Limpio",
         "description": "Arquitecturas escalables siguiendo principios SOLID y buenas prácticas de desarrollo"
@@ -30,11 +32,15 @@
         "title": "Rendimiento",
         "description": "Optimización constante para aplicaciones rápidas y eficientes en cualquier dispositivo"
       }
+    },
+    "skills": {
+      "title": "Stack Tecnológico",
+      "subtitle": "Herramientas y tecnologías que domino para crear soluciones modernas y robustas"
     }
   },
   "skills": {
-    "title": "Stack Tecnológico",
-    "subtitle": "Herramientas y tecnologías que domino para crear soluciones modernas y robustas"
+    "title": "Stack Tecnológico (Sección Removida)",
+    "subtitle": "Esta sección fue integrada en la sección 'Acerca de Mí'"
   },
   "projects": {
     "title": "Proyectos Destacados",
@@ -63,23 +69,6 @@
     }
   },
   "contact": {
-    "title": "¿Colaboramos en un proyecto?",
-    "subtitle": "Estoy disponible para nuevas oportunidades y siempre abierto para discutir proyectos desafiantes. Contáctame para hablar sobre cómo puedo contribuir a tu equipo.",
-    "form": {
-      "name": "Nombre",
-      "email": "Email",
-      "message": "Mensaje",
-      "send": "Enviar Mensaje",
-      "sending": "Enviando...",
-      "success": "¡Mensaje enviado con éxito!",
-      "error": "Error al enviar mensaje. Inténtalo de nuevo."
-    },
-    "cta": {
-      "title": "¿Listo para empezar?",
-      "description": "Descarga mi currículum completo o contáctame directamente para discutir tu proyecto.",
-      "downloadCV": "Descargar Currículum (PDF)",
-      "sendEmail": "Enviar Email"
-    },
     "info": {
       "location": "Brasil • Disponible para proyectos remotos",
       "availability": "Tiempo de respuesta promedio: 24 horas",
