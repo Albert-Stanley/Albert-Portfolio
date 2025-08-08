@@ -78,7 +78,7 @@ const Header = () => {
               onClick={() => scrollToSection("home")}
               className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              AS
+              <img src="/src/assets/logo-as.png" alt="Logo" className="h-8" />
             </button>
           </motion.div>
 

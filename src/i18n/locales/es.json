@@ -65,11 +65,14 @@
     }
   },
   "contact": {
-    "info": {
-      "location": "Brasil • Disponible para proyectos remotos",
-      "availability": "Tiempo de respuesta promedio: 24 horas",
-      "coffee": "Siempre abierto para una conversación sobre tecnología"
+    "title": "Contáctame",
+    "subtitle": "Puedes contactarme por cualquiera de las redes sociales que aparecen abajo. Te responderé lo antes posible.",
+    "contactcard": {
+      "email": "Haz clic para copiar",
+      "email_copiado": "¡Correo electrónico copiado!",
+      "github": "Mi perfil",
+      "linkedin": "Conectar"
     },
-    "footer": "© 2025 Albert Stanley. Desarrollado con ❤️ usando React + TypeScript + Tailwind CSS"
+    "footer": "© 2025 Albert Stanley. Desarrollado con ❤️"
   }
 }
