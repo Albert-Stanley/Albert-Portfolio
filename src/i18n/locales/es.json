@@ -43,7 +43,7 @@
     "subtitle": "Soluciones que desarrollé aplicando las mejores prácticas de desarrollo y diseño",
     "technologies": "Tecnologías:",
     "viewCode": "Ver Código",
-    "viewLive": "Ver Demo",
+    "viewLive": "Acesso",
     "viewMore": "Ver más en GitHub",
     "ctaText": "¿Quieres ver más trabajos? ¡Mira mi perfil de GitHub!",
     "items": {
@@ -61,6 +61,11 @@
         "title": "Autenticación Google OAuth",
         "description": "Solución completa de autenticación con Google OAuth 2.0 usando arquitectura BFF. Implementé flujo seguro de tokens JWT e integración nativa con Expo para una experiencia fluida.",
         "type": "App Móvil"
+      },
+      "portfolio": {
+        "title": "Sitio Web de Portafolio",
+        "description": "Sitio web de portafolio moderno desarrollado con React y TypeScript, con modo oscuro, internacionalización y animaciones fluidas.",
+        "type": "Aplicación Web"
       }
     }
   },
