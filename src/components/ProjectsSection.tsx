@@ -19,8 +19,8 @@ const ProjectsSection: React.FC = () => {
         "Framer Motion",
       ],
       type: "web" as const,
-      githubUrl: "https://github.com/Albert-Stanley",
-      liveUrl: "https://your-live-url.com",
+      githubUrl: "https://github.com/Albert-Stanley/busca-perfil-github",
+      liveUrl: "https://busca-perfil-github-one.vercel.app/",
     },
     {
       id: "dede-application",
@@ -34,8 +34,8 @@ const ProjectsSection: React.FC = () => {
         "Tailwind",
       ],
       type: "mobile" as const,
-      githubUrl: "https://github.com/Albert-Stanley",
-      liveUrl: "https://your-live-url.com",
+      githubUrl: "https://github.com/Albert-Stanley/DedeApplication",
+      // liveUrl: "https://your-live-url.com",
     },
     {
       id: "portfolio",
@@ -50,8 +50,8 @@ const ProjectsSection: React.FC = () => {
         "i18next",
       ],
       type: "web" as const,
-      githubUrl: "https://github.com/Albert-Stanley",
-      liveUrl: "https://your-live-url.com",
+      githubUrl: "https://github.com/Albert-Stanley/Albert-Portfolio",
+      liveUrl: "https://albert-stanley.vercel.app/",
     },
   ];
   const ProjectCard: React.FC<{

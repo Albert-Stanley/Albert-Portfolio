@@ -34,13 +34,8 @@
       }
     },
     "skills": {
-      "title": "Stack Tecnológica",
-      "subtitle": "Ferramentas e tecnologias que domino para criar soluções modernas e robustas"
+      "title": "Minhas Habilidades"
     }
-  },
-  "skills": {
-    "title": "Stack Tecnológica (Seção Removida)",
-    "subtitle": "Esta seção foi integrada à seção 'Sobre Mim'"
   },
   "projects": {
     "title": "Projetos em Destaque",

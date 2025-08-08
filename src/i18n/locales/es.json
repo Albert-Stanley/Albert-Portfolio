@@ -34,14 +34,10 @@
       }
     },
     "skills": {
-      "title": "Stack Tecnológico",
-      "subtitle": "Herramientas y tecnologías que domino para crear soluciones modernas y robustas"
+      "title": "Stack Tecnológico"
     }
   },
-  "skills": {
-    "title": "Stack Tecnológico (Sección Removida)",
-    "subtitle": "Esta sección fue integrada en la sección 'Acerca de Mí'"
-  },
+
   "projects": {
     "title": "Proyectos Destacados",
     "subtitle": "Soluciones que desarrollé aplicando las mejores prácticas de desarrollo y diseño",

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Code, Heart, Zap } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { skills } from "../utils/constants";
 
@@ -8,23 +7,7 @@ const AboutSection: React.FC = () => {
   const { t } = useTranslation();
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
-  const highlights = [
-    {
-      icon: <Code className="w-6 h-6" />,
-      title: t("about.highlights.cleanCode.title"),
-      description: t("about.highlights.cleanCode.description"),
-    },
-    {
-      icon: <Heart className="w-6 h-6" />,
-      title: t("about.highlights.uxui.title"),
-      description: t("about.highlights.uxui.description"),
-    },
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: t("about.highlights.performance.title"),
-      description: t("about.highlights.performance.description"),
-    },
-  ];
+
 
   return (
     <section id="about" className="py-20 bg-gray-50 dark:bg-gray-900">
@@ -77,35 +60,7 @@ const AboutSection: React.FC = () => {
               </motion.p>
             </div>
 
-            {/* Highlights */}
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                {t("about.highlights.title")}
-              </h3>
-              {highlights.map((item, index) => (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ x: 10, scale: 1.02 }}
-                  className="flex items-start gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700 group"
-                >
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    {item.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-                      {item.title}
-                    </h4>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+            
           </motion.div>
 
           {/* Skills Grid - Right Side */}
@@ -120,9 +75,7 @@ const AboutSection: React.FC = () => {
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 {t("about.skills.title")}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-8">
-                {t("about.skills.subtitle")}
-              </p>
+           
             </div>
 
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">

@@ -35,13 +35,8 @@
       }
     },
     "skills": {
-      "title": "Tech Stack",
-      "subtitle": "Tools and technologies I master to create modern and robust solutions"
+      "title": "My Skills"
     }
-  },
-  "skills": {
-    "title": "Tech Stack (Section Removed)",
-    "subtitle": "This section was integrated into the 'About Me' section"
   },
   "projects": {
     "title": "Featured Projects",
