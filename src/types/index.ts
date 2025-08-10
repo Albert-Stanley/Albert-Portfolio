@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   description: string;
   technologies: string[];
-  type: 'web' | 'mobile';
+  type: "web" | "mobile";
   image?: string;
   githubUrl?: string;
   liveUrl?: string;
@@ -11,6 +11,6 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  category: 'frontend' | 'backend' | 'tools' | 'testing';
-  icon: string;
+  category: "frontend" | "backend" | "testing" | "tools" | "mobile";
+  icon: React.ReactElement;
 }

@@ -2,16 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import ProjectCard, { Project } from "./ProjectCard";   
+import ProjectCard, { Project } from "./ProjectCard";
 
 const ProjectsSection: React.FC = () => {
   const { t } = useTranslation();
 
- 
   const projects: Project[] = [
     {
       id: "portfolio",
-      title: "Portfolio Pessoal",   
+      title: "Portfolio Pessoal",
       description:
         "Site de portfólio moderno construído com React e TypeScript, com modo escuro, internacionalização e animações suaves.",
       technologies: [
@@ -23,7 +22,7 @@ const ProjectsSection: React.FC = () => {
       ],
       githubUrl: "https://github.com/Albert-Stanley/Albert-Portfolio",
       liveUrl: "https://albert-stanley.vercel.app/",
-      imageUrl: "/images/portfolio.png",  
+      imageUrl: "/src/assets/logo-as.png",
     },
     {
       id: "github-profile-search",
@@ -38,15 +37,21 @@ const ProjectsSection: React.FC = () => {
       ],
       githubUrl: "https://github.com/Albert-Stanley/busca-perfil-github",
       liveUrl: "https://busca-perfil-github-one.vercel.app/",
-      imageUrl: "/images/github-search.png",  
+      imageUrl: "/src/assets/github_project-preview.png",
     },
     {
       id: "dede-application",
       title: t("projects.items.dedeApp.title"),
       description: t("projects.items.dedeApp.description"),
-      technologies: ["React Native", "Expo", "TypeScript", "Zustand", "Tailwind"],
+      technologies: [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Zustand",
+        "Tailwind",
+      ],
       githubUrl: "https://github.com/Albert-Stanley/DedeApplication",
-      imageUrl: "/images/dede-app.png",   
+      imageUrl: "/src/assets/dede-app-preview.png",
     },
     {
       id: "google-auth",
@@ -61,7 +66,7 @@ const ProjectsSection: React.FC = () => {
       ],
       githubUrl: "https://github.com/Albert-Stanley/google-oauth-app",
       liveUrl: "https://google-oauth.expo.app/",
-      imageUrl: "https://placehold.co/800x600/e2e8f0/334155?text=Projeto",
+      imageUrl: "/src/assets/oauth-preview.png",
     },
   ];
 

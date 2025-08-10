@@ -7,8 +7,6 @@ const AboutSection: React.FC = () => {
   const { t } = useTranslation();
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
-
-
   return (
     <section id="about" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,8 +57,6 @@ const AboutSection: React.FC = () => {
                 {t("about.description2")}
               </motion.p>
             </div>
-
-            
           </motion.div>
 
           {/* Skills Grid - Right Side */}
@@ -75,25 +71,20 @@ const AboutSection: React.FC = () => {
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                 {t("about.skills.title")}
               </h3>
-           
             </div>
 
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <motion.div
                   key={skill.name}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.4,
-                    delay: 0.5 + index * 0.05,
-                  }}
                   viewport={{ once: true }}
                   whileHover={{
                     scale: 1.1,
                     y: -8,
-                    transition: { duration: 0.2 },
                   }}
+                  transition={{  duration: 0.2 }}
                   onMouseEnter={() => setHoveredSkill(skill.name)}
                   onMouseLeave={() => setHoveredSkill(null)}
                   className="relative bg-white dark:bg-gray-800 p-4 rounded-xl border border-gray-200 dark:border-gray-600 hover:border-blue-300 dark:hover:border-blue-500 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group"
