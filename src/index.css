@@ -44,3 +44,9 @@
 * {
   scrollbar-color: #0E9DB8 #111827;  
 }
+
+ /* Seleção de texto personalizada */
+  ::selection {
+    background-color: #0E9DB8;  
+    color: #ffffff;   
+  }
