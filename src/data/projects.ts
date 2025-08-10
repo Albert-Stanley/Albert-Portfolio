@@ -4,7 +4,7 @@ import { Project } from "../components/ProjectCard";
 export const getProjects = (t: TFunction): Project[] => [
     {
       id: "portfolio",
-      title: "Portfolio Pessoal",
+      title: "Portfólio Pessoal",
       description:
         "Site de portfólio moderno construído com React e TypeScript, com modo escuro, internacionalização e animações suaves.",
       technologies: [

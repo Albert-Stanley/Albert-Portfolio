@@ -30,9 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       transition={{ duration: 0.5, delay: 0.1 }}
       viewport={{ once: true }}
     >
-      <div
-        className={`grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12`}
-      >
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
         {/* Coluna da Imagem */}
         <motion.div
           whileHover={{ scale: 1.03 }}
@@ -84,29 +82,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           {/* Links */}
           <div className="flex flex-wrap gap-4 pt-4">
             {project.liveUrl && (
-              <motion.a
+              <a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-lg font-semibold shadow-md
+                  transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lg"
               >
                 <ExternalLink className="w-5 h-5" />
                 <span>{t("projects.viewLive")}</span>
-              </motion.a>
+              </a>
             )}
-            <motion.a
+            <a
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-800 text-white rounded-lg hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-800 text-white rounded-lg font-semibold shadow-md
+                transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 hover:shadow-lg"
             >
               <Github className="w-5 h-5" />
               <span>{t("projects.viewCode")}</span>
-            </motion.a>
+            </a>
           </div>
         </div>
       </div>

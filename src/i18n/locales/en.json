@@ -61,7 +61,7 @@
         "type": "Mobile App"
       },
       "portfolio": {
-        "title": "Portfolio Website",
+        "title": "Portfólio Website",
         "description": "Modern portfolio website built with React and TypeScript, featuring dark mode, internationalization and smooth animations.",
         "type": "Web Application"
       }
