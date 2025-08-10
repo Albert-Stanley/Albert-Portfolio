@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Github } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import ProjectCard from "./ProjectCard";
 import { getProjects } from "../data/projects";  
@@ -57,7 +57,7 @@ const ProjectsSection: React.FC = () => {
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-3 px-8 py-4 bg-gray-900 dark:bg-gray-800 text-white rounded-full font-semibold text-lg hover:bg-gray-700 dark:hover:bg-gray-700 transition-colors duration-300 shadow-lg"
           >
-            <Github className="w-6 h-6" />
+            <FaGithub className="w-6 h-6" />
             <span>{t("projects.viewMore")}</span>
           </motion.a>
         </motion.div>

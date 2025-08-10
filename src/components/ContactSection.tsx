@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, Check } from "lucide-react";
+import { Mail, Linkedin, Check } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { personalInfo } from "../utils/constants";
 
@@ -43,7 +44,7 @@ const ContactSection: React.FC = () => {
       hoverColor: "hover:from-blue-500 hover:to-blue-600",
     },
     {
-      icon: <Github className="w-10 h-10 sm:w-12 sm:h-12" />,
+      icon: <FaGithub className="w-10 h-10 sm:w-12 sm:h-12" />,
       label: "GitHub",
       value: t("contact.contactcard.github"),
       action: () => window.open(personalInfo.github, "_blank"),

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { FaGithub  } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 export type Project = {
@@ -100,7 +101,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-800 text-white rounded-lg font-semibold shadow-md
                 transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 hover:shadow-lg"
             >
-              <Github className="w-5 h-5" />
+              <FaGithub className="w-5 h-5" />
               <span>{t("projects.viewCode")}</span>
             </a>
           </div>
