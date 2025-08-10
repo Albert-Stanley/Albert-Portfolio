@@ -25,3 +25,22 @@
     backface-visibility: hidden;
   }
 }
+
+ 
+::-webkit-scrollbar {
+  width: 40px;  
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0E9DB8;  
+  border-radius: 2px;  
+}
+
+/* Firefox */
+* {
+  scrollbar-color: #0E9DB8 #111827;  
+}

@@ -178,11 +178,11 @@ const ContactSection: React.FC = () => {
 
       {/* Rodapé fixo no final para telas grandes */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0,  }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="relative z-10 px-4 sm:px-6 lg:px-8 pb-8 pt-4 border-t border-white/20 bg-gradient-to-t from-gray-900/50 to-transparent"
+        className="relative px-4 sm:px-6 lg:px-8 pb-8 pt-4  border-t border-white/20 bg-gradient-to-t from-gray-900/50 to-transparent"
       >
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-blue-200 dark:text-blue-300 text-sm sm:text-base">
