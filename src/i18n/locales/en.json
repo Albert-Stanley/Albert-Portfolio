@@ -9,27 +9,27 @@
   "hero": {
     "name": "Hi, I'm Albert Stanley",
     "title": "Building high-performance solutions",
-    "summary": "React and TypeScript specialist, I create digital experiences that combine clean code, intuitive design, and exceptional performance. My focus is transforming complex ideas into elegant and functional solutions."
+    "summary": "I create digital experiences that blend clarity, intuitive design, and outstanding performance. My goal is to turn complex ideas into elegant, functional results that truly make an impact."
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Here you can see more information about me and my current programming skills",
+    "smallTitle": "A Little About Me",
     "profilePhoto": "Profile photo",
-    "description1": "I'm a Frontend Developer and a Software Engineering Student. I build Web and Mobile Applications focused on extracting and implementing the best ideas. You can check some of my Projects in the next section.",
-    "description2": "I'm open to Job opportunities where i can contribute, learn and grow. If you have a good opportunity that matches my skills then don't hesitate to contact me.",
+    "description1": "I'm a Frontend Developer and Software Engineering student passionate about turning great ideas into impactful digital experiences. I build Web and Mobile applications with a focus on quality, usability, and measurable results.",
+    "description2": "I'm open to job opportunities where I can contribute, learn, and grow. If you have a role that aligns with my skills, feel free to reach out.",
     "highlights": {
       "title": "My Specialties",
       "cleanCode": {
         "title": "Clean Code",
-        "description": "Scalable architectures following SOLID principles and development best practices"
+        "description": "Well-structured, scalable architectures following best practices and SOLID principles."
       },
       "uxui": {
         "title": "UX/UI Focus",
-        "description": "Interfaces that prioritize usability and provide exceptional experiences"
+        "description": "User-centered interfaces designed for seamless and enjoyable experiences."
       },
       "performance": {
         "title": "Performance",
-        "description": "Constant optimization for fast and efficient applications on any device"
+        "description": "Ongoing optimization to ensure fast, efficient applications across all devices."
       }
     },
     "skills": {
@@ -38,44 +38,44 @@
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "Solutions I developed applying the best development and design practices",
+    "subtitle": "A curated selection of work combining creativity, efficiency, and impact.",
     "technologies": "Technologies:",
     "viewCode": "View Code",
-    "viewLive": "Access",
+    "viewLive": "Visit",
     "viewMore": "View more on GitHub",
-    "ctaText": "Want to see more work? Check out my GitHub profile!",
+    "ctaText": "Want to explore more projects? Check out my GitHub profile!",
     "items": {
       "githubSearch": {
         "title": "GitHub Profile Search",
-        "description": "Reactive interface for GitHub profile search with request optimization using Tanstack Query. I implemented robust state handling (loading/error) and debounce to improve user experience.",
+        "description": "Intuitive search tool for GitHub profiles with optimized requests and smooth performance, featuring robust state handling and debounce for a better user experience.",
         "type": "Web Application"
       },
       "dedeApp": {
         "title": "DedeApplication",
-        "description": "Cross-platform app for health data management, developed with focus on performance and accessibility. I used Zustand for state management and implemented optimized navigation for iOS/Android.",
+        "description": "Cross-platform health data management app, built for performance, accessibility, and fluid navigation on iOS and Android.",
         "type": "Mobile App"
       },
       "googleAuth": {
         "title": "Google OAuth Authentication",
-        "description": "Complete authentication solution with Google OAuth 2.0 using BFF architecture. I implemented secure JWT token flow and native integration with Expo for a smooth experience.",
+        "description": "Secure, seamless Google login implementation with JWT token flow and native Expo integration for a smooth cross-platform experience.",
         "type": "Mobile App"
       },
       "portfolio": {
-        "title": "Portfólio Website",
-        "description": "Modern portfolio website built with React and TypeScript, featuring dark mode, internationalization and smooth animations.",
+        "title": "Portfolio Website",
+        "description": "Modern portfolio site with elegant design, dark mode, internationalization, and smooth animations.",
         "type": "Web Application"
       }
     }
   },
   "contact": {
     "title": "Get in Touch",
-    "subtitle": "You can contact me in any of those social below. I will be contacting you back as soon as possible",
+    "subtitle": "Feel free to reach out through the links below. I’ll respond as soon as possible.",
     "contactcard": {
       "email": "Click to copy",
       "email_copiado": "Email copied!",
       "github": "My profile",
       "linkedin": "Connect"
     },
-    "footer": "© 2025 Albert Stanley. Developed with ❤️"
+    "footer": "© 2025 Albert Stanley. Built with ❤️"
   }
 }

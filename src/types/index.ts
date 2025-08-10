@@ -11,6 +11,6 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  category: "frontend" | "backend" | "testing" | "tools" | "mobile";
+  category: "frontend" | "backend" | "testing" | "tools" | "mobile" | "concepts";
   icon: React.ReactElement;
 }

@@ -8,27 +8,28 @@
   },
   "hero": {
     "name": "Olá, eu sou Albert Stanley",
-    "title": "Desenvolvendo soluções de alta performance",
-    "summary": "Especialista em React e TypeScript, construo experiências digitais que combinam código limpo, design intuitivo e performance excepcional. Meu foco é transformar ideias complexas em soluções elegantes e funcionais."
+    "title": "Transformando ideias em soluções memoráveis",
+    "summary": "Crio experiências digitais que combinam simplicidade, impacto e resultados reais. Meu objetivo é transformar conceitos em produtos funcionais, atraentes e prontos para encantar qualquer usuário."
   },
   "about": {
     "title": "Sobre Mim",
-    "subtitle": "Desenvolvedor especializado em criar experiências digitais excepcionais com foco em performance, usabilidade e código limpo",
-    "description1": "Sou um desenvolvedor front-end que acredita que grandes produtos nascem da combinação entre excelência técnica e comunicação clara. Com sólida experiência em React, TypeScript e arquiteturas modernas, transformo requisitos complexos em interfaces intuitivas e performáticas.",
-    "description2": "Minha abordagem vai além do código: entrego soluções completas que consideram experiência do usuário, manutenibilidade e escalabilidade. Trabalho com metodologias ágeis e tenho um histórico consistente de entregas no prazo, sempre priorizando a qualidade e a colaboração efetiva com equipes multidisciplinares.",
+    "smallTitle": "Um Pouco Sobre Mim",
+    "profilePhoto": "Foto de perfil",
+    "description1": "Sou Desenvolvedor Front-end e estudante de Engenharia de Software, apaixonado por transformar boas ideias em experiências digitais funcionais e marcantes. Ao longo da minha jornada, venho criando soluções para Web e Mobile com foco na qualidade e no impacto real para o usuário.",
+    "description2": "Busco oportunidades que me permitam crescer, aprender e gerar resultados significativos. Se você está procurando alguém comprometido e criativo, estou pronto para contribuir.",
     "highlights": {
       "title": "Minhas Especialidades",
       "cleanCode": {
         "title": "Código Limpo",
-        "description": "Arquiteturas escaláveis seguindo princípios SOLID e boas práticas de desenvolvimento"
+        "description": "Desenvolvimento de soluções bem estruturadas, sustentáveis e de fácil manutenção."
       },
       "uxui": {
-        "title": "UX/UI Focus",
-        "description": "Interfaces que priorizam usabilidade e proporcionam experiências excepcionais"
+        "title": "Foco em UX/UI",
+        "description": "Interfaces intuitivas e agradáveis, pensadas para criar conexões e facilitar o uso."
       },
       "performance": {
         "title": "Performance",
-        "description": "Otimização constante para aplicações rápidas e eficientes em qualquer dispositivo"
+        "description": "Aplicações rápidas e eficientes que mantêm a fluidez independentemente do dispositivo."
       }
     },
     "skills": {
@@ -37,7 +38,7 @@
   },
   "projects": {
     "title": "Projetos em Destaque",
-    "subtitle": "Soluções que desenvolvi aplicando as melhores práticas de desenvolvimento e design",
+    "subtitle": "Uma seleção de trabalhos que combinam criatividade, eficiência e impacto.",
     "technologies": "Tecnologias:",
     "viewCode": "Ver Código",
     "viewLive": "Acessar",
@@ -45,34 +46,33 @@
     "ctaText": "Quer ver mais trabalhos? Confira meu perfil no GitHub!",
     "items": {
       "githubSearch": {
-        "title": "GitHub Profile Search",
-        "description": "Interface reativa para busca de perfis GitHub com otimização de requisições usando Tanstack Query. Implementei tratamento robusto de estados (loading/error) e debounce para melhorar a experiência do usuário.",
+        "title": "Buscador de Perfis do GitHub",
+        "description": "Ferramenta intuitiva para localizar perfis do GitHub com carregamento otimizado e resposta rápida, garantindo praticidade e fluidez ao usuário.",
         "type": "Aplicação Web"
       },
       "dedeApp": {
         "title": "DedeApplication",
-        "description": "App multiplataforma para gestão de dados de saúde, desenvolvido com foco em performance e acessibilidade. Utilizei Zustand para gerenciamento de estado e implementei navegação otimizada para iOS/Android.",
+        "description": "Aplicativo multiplataforma para gestão de dados de saúde, desenvolvido para oferecer alto desempenho, acessibilidade e navegação fluida.",
         "type": "App Mobile"
       },
       "googleAuth": {
-        "title": "Autenticação Google OAuth",
-        "description": "Solução completa de autenticação com Google OAuth 2.0 usando arquitetura BFF. Implementei fluxo seguro de tokens JWT e integração nativa com Expo para uma experiência fluida.",
+        "title": "Autenticação com Google OAuth",
+        "description": "Implementação segura e ágil de login via Google, garantindo confiabilidade e integração perfeita entre diferentes dispositivos.",
         "type": "App Mobile"
       },
       "portfolio": {
-        "title": "Portfolio Website",
-        "description": "Site de portfólio moderno construído com React e TypeScript, com modo escuro, internacionalização e animações suaves.",
+        "title": "Site Portfólio",
+        "description": "Portfólio moderno com design elegante, navegação intuitiva e recursos que valorizam cada detalhe do trabalho apresentado.",
         "type": "Aplicação Web"
       }
     }
   },
-
   "contact": {
     "title": "Entre em Contato",
-    "subtitle": "Você pode me contatar por qualquer uma das redes sociais abaixo. Eu retornarei o contato o mais rápido possível.",
+    "subtitle": "Se quiser conversar sobre projetos, ideias ou colaborações, estarei pronto para responder.",
     "contactcard": {
       "email": "Clique para copiar",
-      "email_copiado": "Email copiado!",
+      "email_copiado": "E-mail copiado!",
       "github": "Meu perfil",
       "linkedin": "Conectar"
     },

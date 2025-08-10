@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { skills } from "../utils/constants";
 
 const AboutSection: React.FC = () => {
   const { t } = useTranslation();
-  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   return (
     <section id="about" className="py-20 bg-gray-50 dark:bg-gray-900">
@@ -20,29 +19,29 @@ const AboutSection: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             {t("about.title")}
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            {t("about.subtitle")}
-          </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full mt-6" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Content with enhanced styling - Left Side */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          {/* Coluna Esquerda - Texto */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="flex flex-col h-full"
           >
-            {/* Introduction text */}
-            <div className="space-y-6">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white mb-4">
+              {t("about.smallTitle")}
+            </h3>
+
+            <div className="space-y-6 flex-1">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed"
               >
                 {t("about.description1")}
               </motion.p>
@@ -52,63 +51,42 @@ const AboutSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed"
               >
                 {t("about.description2")}
               </motion.p>
             </div>
           </motion.div>
 
-          {/* Skills Grid - Right Side */}
+          {/* Coluna Direita - Skills */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="flex flex-col h-full"
           >
-            <div className="text-center lg:text-left">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                {t("about.skills.title")}
-              </h3>
-            </div>
+            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white mb-4">
+              {t("about.skills.title")}
+            </h3>
 
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+            <div className="grid grid-cols-4 gap-5 flex-1">
               {skills.map((skill) => (
                 <motion.div
                   key={skill.name}
-                  initial={{ opacity: 0, scale: 0.8 }}
+                  initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  whileHover={{
-                    scale: 1.1,
-                    y: -8,
-                  }}
-                  transition={{  duration: 0.2 }}
-                  onMouseEnter={() => setHoveredSkill(skill.name)}
-                  onMouseLeave={() => setHoveredSkill(null)}
-                  className="relative bg-white dark:bg-gray-800 p-4 rounded-xl border border-gray-200 dark:border-gray-600 hover:border-blue-300 dark:hover:border-blue-500 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group"
+                  whileHover={{ scale: 1.05, y: -4 }}
+                  transition={{ duration: 0.2 }}
+                  className="flex flex-col items-center justify-center bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-500 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer group"
                 >
-                  <div className="text-center space-y-2">
-                    <div className="text-2xl group-hover:scale-110 transition-transform duration-200">
-                      {skill.icon}
-                    </div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white text-xs group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-                      {skill.name}
-                    </h4>
+                  <div className="text-2xl sm:text-3xl group-hover:scale-110 transition-transform duration-200">
+                    {skill.icon}
                   </div>
-
-                  {hoveredSkill === skill.name && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-700 text-white px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap z-10 shadow-lg"
-                    >
-                      {skill.name}
-                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-gray-900 dark:border-t-gray-700" />
-                    </motion.div>
-                  )}
+                  <h4 className="mt-2 font-medium text-gray-900 dark:text-white text-xs sm:text-sm group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 text-center">
+                    {skill.name}
+                  </h4>
                 </motion.div>
               ))}
             </div>

@@ -1,78 +1,78 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Acerca",
+    "about": "Sobre mí",
     "skills": "Habilidades",
     "projects": "Proyectos",
     "contact": "Contacto"
   },
   "hero": {
-    "name": "Albert Stanley",
-    "title": "Desarrollando interfaces web de alto rendimiento",
-    "summary": "Especialista en React y TypeScript, creo experiencias digitales que combinan código limpio, diseño intuitivo y rendimiento excepcional. Mi enfoque es transformar ideas complejas en soluciones elegantes y funcionales."
+    "name": "Hola, soy Albert Stanley",
+    "title": "Creando soluciones de alto rendimiento",
+    "summary": "Diseño experiencias digitales que combinan claridad, diseño intuitivo y un rendimiento excepcional. Mi objetivo es transformar ideas complejas en resultados elegantes y funcionales que generen un verdadero impacto."
   },
   "about": {
-    "title": "Acerca de Mí",
-    "subtitle": "Desarrollador especializado en crear experiencias digitales excepcionales enfocadas en rendimiento, usabilidad y código limpio",
-    "description1": "Soy un desarrollador front-end que cree que los grandes productos nacen de la combinación entre excelencia técnica y comunicación clara. Con sólida experiencia en React, TypeScript y arquitecturas modernas, transformo requisitos complejos en interfaces intuitivas y performantes.",
-    "description2": "Mi enfoque va más allá del código: entrego soluciones completas que consideran experiencia de usuario, mantenibilidad y escalabilidad. Trabajo con metodologías ágiles y tengo un historial consistente de entregas a tiempo, siempre priorizando la calidad y la colaboración efectiva con equipos multidisciplinarios.",
+    "title": "Sobre Mí",
+    "smallTitle": "Un Poco Sobre Mí",
+    "profilePhoto": "Foto de perfil",
+    "description1": "Soy Desarrollador Front-end y estudiante de Ingeniería de Software, apasionado por convertir buenas ideas en experiencias digitales efectivas y atractivas. Creo aplicaciones Web y Móviles con un enfoque en la calidad y en los resultados reales para el usuario.",
+    "description2": "Estoy abierto a oportunidades laborales donde pueda contribuir, aprender y crecer. Si tienes un puesto que encaje con mis habilidades, no dudes en contactarme.",
     "highlights": {
       "title": "Mis Especialidades",
       "cleanCode": {
         "title": "Código Limpio",
-        "description": "Arquitecturas escalables siguiendo principios SOLID y buenas prácticas de desarrollo"
+        "description": "Arquitecturas bien estructuradas y escalables, siguiendo principios SOLID y las mejores prácticas."
       },
       "uxui": {
-        "title": "Enfoque UX/UI",
-        "description": "Interfaces que priorizan usabilidad y proporcionan experiencias excepcionales"
+        "title": "Enfoque en UX/UI",
+        "description": "Interfaces centradas en el usuario, diseñadas para ofrecer una experiencia fluida y agradable."
       },
       "performance": {
         "title": "Rendimiento",
-        "description": "Optimización constante para aplicaciones rápidas y eficientes en cualquier dispositivo"
+        "description": "Optimización constante para aplicaciones rápidas y eficientes en cualquier dispositivo."
       }
     },
     "skills": {
-      "title": "Stack Tecnológico"
+      "title": "Mis Habilidades"
     }
   },
-
   "projects": {
     "title": "Proyectos Destacados",
-    "subtitle": "Soluciones que desarrollé aplicando las mejores prácticas de desarrollo y diseño",
+    "subtitle": "Una selección de trabajos que combinan creatividad, eficiencia e impacto.",
     "technologies": "Tecnologías:",
     "viewCode": "Ver Código",
-    "viewLive": "Acesso",
+    "viewLive": "Visitar",
     "viewMore": "Ver más en GitHub",
-    "ctaText": "¿Quieres ver más trabajos? ¡Mira mi perfil de GitHub!",
+    "ctaText": "¿Quieres explorar más proyectos? ¡Visita mi perfil de GitHub!",
     "items": {
       "githubSearch": {
-        "title": "Búsqueda de Perfil GitHub",
-        "description": "Interfaz reactiva para búsqueda de perfiles GitHub con optimización de peticiones usando Tanstack Query. Implementé manejo robusto de estados (loading/error) y debounce para mejorar la experiencia del usuario.",
+        "title": "Buscador de Perfiles de GitHub",
+        "description": "Herramienta intuitiva para buscar perfiles de GitHub con peticiones optimizadas, manejo robusto de estados y debounce para una experiencia de usuario más fluida.",
         "type": "Aplicación Web"
       },
       "dedeApp": {
         "title": "DedeApplication",
-        "description": "App multiplataforma para gestión de datos de salud, desarrollada con enfoque en rendimiento y accesibilidad. Utilicé Zustand para gestión de estado e implementé navegación optimizada para iOS/Android.",
-        "type": "App Móvil"
+        "description": "Aplicación multiplataforma para la gestión de datos de salud, creada para ofrecer alto rendimiento, accesibilidad y navegación fluida en iOS y Android.",
+        "type": "Aplicación Móvil"
       },
       "googleAuth": {
-        "title": "Autenticación Google OAuth",
-        "description": "Solución completa de autenticación con Google OAuth 2.0 usando arquitectura BFF. Implementé flujo seguro de tokens JWT e integración nativa con Expo para una experiencia fluida.",
-        "type": "App Móvil"
+        "title": "Autenticación con Google OAuth",
+        "description": "Implementación segura y fluida de inicio de sesión con Google, incluyendo flujo de tokens JWT e integración nativa con Expo.",
+        "type": "Aplicación Móvil"
       },
       "portfolio": {
         "title": "Sitio Web de Portafolio",
-        "description": "Sitio web de portafolio moderno desarrollado con React y TypeScript, con modo oscuro, internacionalización y animaciones fluidas.",
+        "description": "Portafolio moderno con diseño elegante, modo oscuro, internacionalización y animaciones suaves.",
         "type": "Aplicación Web"
       }
     }
   },
   "contact": {
-    "title": "Contáctame",
-    "subtitle": "Puedes contactarme por cualquiera de las redes sociales que aparecen abajo. Te responderé lo antes posible.",
+    "title": "Ponte en Contacto",
+    "subtitle": "No dudes en escribirme a través de los enlaces de abajo. Te responderé lo antes posible.",
     "contactcard": {
       "email": "Haz clic para copiar",
-      "email_copiado": "¡Correo electrónico copiado!",
+      "email_copiado": "¡Email copiado!",
       "github": "Mi perfil",
       "linkedin": "Conectar"
     },
