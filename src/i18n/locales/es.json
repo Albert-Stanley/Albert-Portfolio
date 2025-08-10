@@ -9,9 +9,7 @@
   "hero": {
     "name": "Albert Stanley",
     "title": "Desarrollando interfaces web de alto rendimiento",
-    "summary": "Especialista en React y TypeScript, creo experiencias digitales que combinan código limpio, diseño intuitivo y rendimiento excepcional. Mi enfoque es transformar ideas complejas en soluciones elegantes y funcionales.",
-    "cta": "Ver mis proyectos",
-    "downloadCV": "Descargar CV"
+    "summary": "Especialista en React y TypeScript, creo experiencias digitales que combinan código limpio, diseño intuitivo y rendimiento excepcional. Mi enfoque es transformar ideas complejas en soluciones elegantes y funcionales."
   },
   "about": {
     "title": "Acerca de Mí",

@@ -7,18 +7,16 @@
     "contact": "Contact"
   },
   "hero": {
-    "name": "Albert Stanley",
-    "title": "Building high-performance web interfaces",
-    "summary": "React and TypeScript specialist, I create digital experiences that combine clean code, intuitive design, and exceptional performance. My focus is transforming complex ideas into elegant and functional solutions.",
-    "cta": "View my projects",
-    "downloadCV": "Download CV"
+    "name": "Hi, I'm Albert Stanley",
+    "title": "Building high-performance solutions",
+    "summary": "React and TypeScript specialist, I create digital experiences that combine clean code, intuitive design, and exceptional performance. My focus is transforming complex ideas into elegant and functional solutions."
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Developer specialized in creating exceptional digital experiences focused on performance, usability and clean code",
+    "subtitle": "Here you can see more information about me and my current programming skills",
     "profilePhoto": "Profile photo",
-    "description1": "I'm a front-end developer who believes great products are born from the combination of technical excellence and clear communication. With solid experience in React, TypeScript, and modern architectures, I transform complex requirements into intuitive and performant interfaces.",
-    "description2": "My approach goes beyond code: I deliver complete solutions that consider user experience, maintainability, and scalability. I work with agile methodologies and have a consistent track record of on-time deliveries, always prioritizing quality and effective collaboration with multidisciplinary teams.",
+    "description1": "I'm a Frontend Developer and a Software Engineering Student. I build Web and Mobile Applications focused on extracting and implementing the best ideas. You can check some of my Projects in the next section.",
+    "description2": "I'm open to Job opportunities where i can contribute, learn and grow. If you have a good opportunity that matches my skills then don't hesitate to contact me.",
     "highlights": {
       "title": "My Specialties",
       "cleanCode": {

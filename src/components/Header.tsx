@@ -78,7 +78,7 @@ const Header = () => {
               onClick={() => scrollToSection("home")}
               className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              <img src="/src/assets/logo-as.png" alt="Logo" className="h-8" />
+              <img src="/src/assets/logo-as.png" alt="Logo" className="h-10" />
             </button>
           </motion.div>
 
@@ -89,7 +89,7 @@ const Header = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item.id)}
-                className={`relative px-3 py-2 text-base font-medium transition-colors ${
+                className={`relative px-3 py-2 text-xl font-bold transition-colors ${
                   activeSection === item.id
                     ? "text-blue-600 dark:text-blue-400"
                     : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
