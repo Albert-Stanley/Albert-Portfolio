@@ -16,7 +16,7 @@ export const getProjects = (t: TFunction): Project[] => [
       ],
       githubUrl: "https://github.com/Albert-Stanley/Albert-Portfolio",
       liveUrl: "https://albert-stanley.vercel.app/",
-      imageUrl: "/src/assets/portfolio-preview.png",
+      imageUrl: "/assets/portfolio-preview.png",
     },
     {
       id: "github-profile-search",
@@ -31,7 +31,7 @@ export const getProjects = (t: TFunction): Project[] => [
       ],
       githubUrl: "https://github.com/Albert-Stanley/busca-perfil-github",
       liveUrl: "https://busca-perfil-github-one.vercel.app/",
-      imageUrl: "/src/assets/github_project-preview.png",
+      imageUrl: "/assets/github_project-preview.png",
     },
     {
       id: "dede-application",
@@ -45,7 +45,7 @@ export const getProjects = (t: TFunction): Project[] => [
         "Tailwind",
       ],
       githubUrl: "https://github.com/Albert-Stanley/DedeApplication",
-      imageUrl: "/src/assets/dede-app-preview.png",
+      imageUrl: "/assets/dede-app-preview.png",
     },
     {
       id: "google-auth",
@@ -60,6 +60,6 @@ export const getProjects = (t: TFunction): Project[] => [
       ],
       githubUrl: "https://github.com/Albert-Stanley/google-oauth-app",
       liveUrl: "https://google-oauth.expo.app/",
-      imageUrl: "/src/assets/oauth-preview.png",
+      imageUrl: "/assets/oauth-preview.png",
     },
   ];
