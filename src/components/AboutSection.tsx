@@ -41,7 +41,7 @@ const AboutSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed"
+                className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed text-justify"
               >
                 {t("about.description1")}
               </motion.p>
@@ -51,7 +51,7 @@ const AboutSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed"
+                className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed text-justify"
               >
                 {t("about.description2")}
               </motion.p>
